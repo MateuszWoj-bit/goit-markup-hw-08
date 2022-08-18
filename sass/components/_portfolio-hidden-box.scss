@@ -1,0 +1,16 @@
+.portfolio-hidden-box {
+  position: relative;
+  overflow: hidden;
+  &__paragraph {
+    padding: 49px 45px 49px 24px;
+    position: absolute;
+    top: 0;
+    background-color: $brand-color-opacity;
+    font-size: 18px;
+    line-height: 1.56;
+    color: $white-color;
+    letter-spacing: 0.03em;
+    transform: translate(0%, 120%);
+    transition: transform 400ms linear;
+  }
+}

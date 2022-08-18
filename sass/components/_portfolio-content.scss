@@ -1,0 +1,37 @@
+.portfolio-content {
+  margin-top: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  &__caption {
+    padding: 24px 20px;
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    background: $white-color;
+    border: 1px solid $border-portfolio-color;
+  }
+  &__span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: $grey-color;
+  }
+  &__list-item {
+    flex-basis: calc((100% - 10px) / 4);
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+  &__figure {
+    &:hover {
+      .portfolio-hidden-box__paragraph {
+        transform: translate(0, 0);
+      }
+    }
+  }
+}

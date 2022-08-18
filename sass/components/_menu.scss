@@ -1,0 +1,7 @@
+.menu {
+  &focus {
+    color: $brandcolor;
+    fill: $brandcolor;
+    --icon-color: $brandcolor;
+  }
+}

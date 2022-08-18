@@ -1,0 +1,125 @@
+.modal {
+  height: 581px;
+  width: 528px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  &__button--close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: $white-color;
+    border: 1px solid $black-border10-color;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__label {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    position: relative;
+    &:focus-within {
+      fill: $brandcolor;
+    }
+    &:nth-child(4) {
+      .modal__input {
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        resize: none;
+        height: 120px;
+        padding: 12px 16px;
+        &:focus-within {
+          border: 1px solid $brandcolor;
+          fill: $brandcolor;
+          outline: none;
+          appearance: none;
+        }
+        &::placeholder {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          letter-spacing: 0.01em;
+          color: $grey-50-color;
+        }
+      }
+    }
+  }
+  &__span {
+    font-family: $font-roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: $grey-color;
+    margin-bottom: 4px;
+  }
+  &__title {
+    text-align: center;
+    font-family: $font-roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $site-color;
+    margin-bottom: 7px;
+  }
+  &__input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 40px;
+    &:focus-within {
+      border: 1px solid $brandcolor;
+      fill: $brandcolor;
+      outline: none;
+      appearance: none;
+    }
+  }
+  &__svg-person {
+    position: absolute;
+    top: 0;
+    margin: 29px 0 0 15px;
+  }
+  &__svg-phone {
+    position: absolute;
+    top: 0;
+    margin: 32px 0 0 17px;
+  }
+  &__svg-email {
+    position: absolute;
+    top: 0;
+    margin: 31px 0 0 17px;
+  }
+  &__button--submit {
+    margin: 30px auto;
+    padding: 10px 41px 10px 42px;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $white-color;
+    background-color: $brandcolor;
+    border: none;
+    border-radius: 4px;
+  }
+}

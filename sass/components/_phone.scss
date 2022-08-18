@@ -1,0 +1,28 @@
+.phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $grey-color;
+  fill: $grey-color;
+  margin-top: 10px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &__link:focus,
+  &:hover,
+  &:focus {
+    color: $brandcolor;
+    fill: $brandcolor;
+    --icon-color: $brandcolor;
+  }
+  &__svg-mobile {
+  --icon-color: currentColor;
+  margin-right: 10px;
+}
+}

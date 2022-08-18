@@ -1,0 +1,21 @@
+.customers {
+  display: flex;
+  margin-top: 50px;
+  .customers__list {
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+  &__box-svg {
+    height: 92px;
+    width: 170px;
+    padding: 17.71px 32px 14.25px;
+    border: 1px solid $icon-base-color;
+    border-radius: 4px;
+    fill: $icon-base-color;
+    &:hover {
+      border: 1px solid $brandcolor;
+      fill: $brandcolor;
+    }
+  }
+}

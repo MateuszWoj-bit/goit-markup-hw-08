@@ -1,0 +1,36 @@
+.footer-social {
+  margin-left: 70px;
+  padding-top: 12px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+  &__list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  &__list-item {
+    display: block;
+    border-radius: 50%;
+    background-color: $social-backgroud-footer;
+    fill: $white-color;
+    height: 44px;
+    width: 44px;
+    &:nth-child(n + 2) {
+      margin-left: 10px;
+    }
+  }
+  &__svg {
+    height: 44px;
+    width: 44px;
+    --icon-color: currentColor;
+    &:hover {
+      border-radius: 50%;
+      background-color: $brandcolor;
+      fill: $white-color;
+    }
+  }
+}

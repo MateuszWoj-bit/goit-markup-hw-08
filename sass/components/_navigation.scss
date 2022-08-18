@@ -1,0 +1,41 @@
+.navigation {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  &__agencja {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      border-bottom: solid 4px $brandcolor;
+      top: 43px;
+      width: 53px;
+    }
+  }
+  &__link {
+    &:hover,
+    &:focus {
+      color: $brandcolor;
+    }
+  }
+  &__list {
+    margin-top: 10px;
+    margin-left: 93px;
+    display: flex;
+  }
+  &__list-item {
+    margin-right: 46px;
+  }
+  &__portfolio {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      border-bottom: solid 4px $brandcolor;
+      top: 43px;
+      left: 99px;
+      width: 58px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.email {
+  margin-left: 331px;
+  display: flex;
+  color: $grey-color;
+  fill: $grey-color;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  &__list-item {
+    margin-right: 46px;
+  }
+  &:hover,
+  &:focus,
+  &__link:focus {
+    color: $brandcolor;
+    fill: $brandcolor;
+    --icon-color: $brandcolor;
+  }
+  &__svg-envelope {
+    margin-right: 10px;
+    --icon-color: currentColor;
+  }
+}

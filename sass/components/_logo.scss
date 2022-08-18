@@ -1,0 +1,13 @@
+.logo {
+  font-family: $font-raleway;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+  color: $black-color;
+  &__span--brand {
+    color: $brandcolor;
+  }
+  &__span--bright {
+    color: $white-color;
+  }
+}

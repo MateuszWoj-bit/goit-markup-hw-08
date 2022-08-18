@@ -1,0 +1,19 @@
+.feature-box {
+  &__box-svg {
+    height: 120px;
+    width: 270px;
+    padding: 25px 100px;
+    background-color: $grey-background-color;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+  .feature-box__paragraph {
+    width: 270px;
+  }
+  &__paragraph {
+  color: $grey-color;
+}
+&__title {
+  margin-bottom: 10px;
+}
+}

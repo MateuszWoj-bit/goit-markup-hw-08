@@ -1,0 +1,22 @@
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  &__list-item {
+  display: block;
+  border-radius: 50%;
+  background-color: $white-color;
+  fill: $icon-base-color;
+  &:nth-child(n + 2) {
+  margin-left: 10px;
+}
+}
+&__svg {
+  --icon-color: currentColor;
+  &:hover {
+  border-radius: 50%;
+  background-color: $brandcolor;
+  fill: $white-color;
+}
+}
+}

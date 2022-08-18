@@ -1,0 +1,12 @@
+#backdrop,
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $black-backdrop-color;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transition: opacity 2000ms, visibility 2000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
