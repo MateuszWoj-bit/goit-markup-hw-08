@@ -1,11 +1,19 @@
 .banner {
-  padding: 200px 0px 200px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.5)),
-    url(../images/Solutions-background.jpg);
-  background-size: 1600px, contain, 1600px, contain;
+  position: relative;
+  height: 600px;
+  max-height: 600px;
+  background-image:
+    url(../images/Solution.jpg);
+  background-size: 1600px, contain,  contain;
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   &__title {
+    width: 696px;
+     position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    padding: 200px 0 ;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -16,7 +24,12 @@
     color: $white-color;
   }
   &__button {
-    margin: auto;
+    position: absolute;
+     position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    
     margin-top: 30px;
     padding: 10px 41px 10px 42px;
     display: block;

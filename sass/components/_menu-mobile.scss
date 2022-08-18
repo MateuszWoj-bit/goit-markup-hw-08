@@ -1,0 +1,180 @@
+.menu-mobile {
+  height: 796px;
+  width: 480px;
+  position: absolute;
+
+  background: $white-color;
+  border: solid 1 black;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  &__button--close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: $white-color;
+    border: 1px solid $black-border10-color;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
+  &__navigation-link--agencja {
+    position: absolute;
+    width: 152px;
+    height: 48px;
+    left: 40px;
+    top: 48px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    &:hover {
+      color: $brandcolor;
+    }
+  }
+  &__navigation-link--portfolio {
+    position: absolute;
+    width: 219px;
+    height: 48px;
+    left: 40px;
+    top: 132px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    &:hover {
+      color: $brandcolor;
+    }
+  }
+  &__navigation-link--kontakt {
+    position: absolute;
+    width: 192px;
+    height: 48px;
+    left: 40px;
+    top: 212px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    &:hover {
+      color: $brandcolor;
+    }
+  }
+  &__phone-link {
+    position: absolute;
+    width: 270px;
+    height: 40px;
+    left: 40px;
+    top: 562px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    &:hover {
+      color: $brandcolor;
+    }
+  }
+  &__email-link {
+    position: absolute;
+    width: 231px;
+    height: 28px;
+    left: 40px;
+    top: 634px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    &:hover {
+      color: $brandcolor;
+    }
+  }
+  &__social-link--instagram {
+    position: absolute;
+    width: 85px;
+    height: 22px;
+    left: 40px;
+    top: 726px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  &__social-link--twitter {
+    position: absolute;
+    width: 59px;
+    height: 22px;
+    left: 145px;
+    top: 726px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+  }
+  &__social-link--facebook {
+    position: absolute;
+    width: 81px;
+    height: 22px;
+    left: 224px;
+    top: 726px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+  }
+  &__social-link--linkdin {
+    position: absolute;
+    width: 72px;
+    height: 22px;
+    left: 325px;
+    top: 726px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+  }
+}

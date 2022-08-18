@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="description" content="Strona Studio firmy WebStudio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
     <link
       rel="stylesheet"
@@ -49,12 +50,35 @@
           <li><a href="tel:+48111111111" class="phone__link">+48 111 111 111</a></li>
         </ul>
       </div>
+      <div id="" class="menu-mobile-backdrop is-hidden" >
+      <div class="menu-mobile">
+        <button  class="menu-mobile__button--close">x</button>
+        <nav class="menu-mobile__navigation">
+          <ul class="menu-mobile__navigation-list">
+            <li class="menu-mobile__navigation-list-item"><a href="./index.html" class="menu-mobile__navigation-link--agencja">Agencja</a></li>
+            <li class="menu-mobile__navigation-list-item"><a href="./portfolio.html" class="menu-mobile__navigation-link--portfolio">Portfolio</a></li>
+            <li><a href="#" class="menu-mobile__navigation-link--kontakt">Kontakt</a></li>              
+          </ul>
+        </nav>
+        <ul class="menu-mobile__contact">
+         <li><a href="tel:+48111111111" class="menu-mobile__phone-link">+48 111 111 111</a></li> 
+         <li><a href="menu-mobilemailto:info@devstudio.com" class="menu-mobile__email-link">info@devstudio.com</a></li>
+        </ul>
+        <ul class="menu-mobile__social">
+          <li class="menu-mobile__social-list-item"><a href="./index.html" class="menu-mobile__social-link--instagram">Instagram</a></li>
+          <li class="menu-mobile__social-list-item"><a href="./index.html" class="menu-mobile__social-link--twitter">Twitter</a></li>
+          <li class="menu-mobile__social-list-item"><a href="./index.html" class="menu-mobile__social-link--facebook">Facebook</a></li>
+          <li class="menu-mobile__social-list-item"><a href="./index.html" class="menu-mobile__social-link--linkdin">LinkedIn</a></li>
+        </ul>
+        
+      </div>
+    </div>
     </header>
     <main class="page-main">
       <section class="banner">
-        <div class="container">
+        <div class="container ">
           <h2 class="banner__title">
-            Efektywne rozwiązania<br />
+            Efektywne rozwiązania
             dla waszego biznesu
           </h2>
           <button data-modal-open type="button" class="banner__button">Zamów usługe</button>
@@ -163,11 +187,11 @@
         </div>
       </section>
       <section class="section">
-        <div class="container">
+        <div class="container page-main__section-4--background">
           <h2 class ="headline-2">Nasz zespół</h2>
           <div class="team">
             <ul class="team__list">
-              <li>
+              <li class="team__list-item--position">
                 <figure class="team__figure">
                   <img
                     class=""
