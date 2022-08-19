@@ -1,0 +1,11 @@
+
+.menu-mobile-open{
+  position: absolute;
+  top: 30px;
+  right: 23px; 
+  fill: $black-color;
+  cursor: pointer;
+  &:hover{fill:  $brandcolor;}
+  
+}
+

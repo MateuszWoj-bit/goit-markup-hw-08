@@ -26,8 +26,12 @@
         </h1>
         <nav class="navigation">
           <ul class="navigation__list navigation__agencja">
-            <li class="navigation__list-item"><a href="./index.html" class="navigation__link">Agencja</a></li>
-            <li class="navigation__list-item"><a href="./portfolio.html" class="navigation__link">Portfolio</a></li>
+            <li class="navigation__list-item">
+              <a href="./index.html" class="navigation__link">Agencja</a>
+            </li>
+            <li class="navigation__list-item">
+              <a href="./portfolio.html" class="navigation__link">Portfolio</a>
+            </li>
             <li><a href="#" class="navigation__link">Kontakt</a></li>
           </ul>
         </nav>
@@ -50,37 +54,85 @@
           <li><a href="tel:+48111111111" class="phone__link">+48 111 111 111</a></li>
         </ul>
       </div>
-      <div id="" class="menu-mobile-backdrop is-hidden" >
-      <div class="menu-mobile">
-        <button  class="menu-mobile__button--close">x</button>
-        <nav class="menu-mobile__navigation">
-          <ul class="menu-mobile__navigation-list">
-            <li class="menu-mobile__navigation-list-item"><a href="./index.html" class="menu-mobile__navigation-link--agencja">Agencja</a></li>
-            <li class="menu-mobile__navigation-list-item"><a href="./portfolio.html" class="menu-mobile__navigation-link--portfolio">Portfolio</a></li>
-            <li><a href="#" class="menu-mobile__navigation-link--kontakt">Kontakt</a></li>              
-          </ul>
-        </nav>
-        <ul class="menu-mobile__contact">
-         <li><a href="tel:+48111111111" class="menu-mobile__phone-link">+48 111 111 111</a></li> 
-         <li><a href="menu-mobilemailto:info@devstudio.com" class="menu-mobile__email-link">info@devstudio.com</a></li>
-        </ul>
-        <ul class="menu-mobile__social">
-          <li class="menu-mobile__social-list-item"><a href="./index.html" class="menu-mobile__social-link--instagram">Instagram</a></li>
-          <li class="menu-mobile__social-list-item"><a href="./index.html" class="menu-mobile__social-link--twitter">Twitter</a></li>
-          <li class="menu-mobile__social-list-item"><a href="./index.html" class="menu-mobile__social-link--facebook">Facebook</a></li>
-          <li class="menu-mobile__social-list-item"><a href="./index.html" class="menu-mobile__social-link--linkdin">LinkedIn</a></li>
-        </ul>
+      <svg
+        width="24"
+        height="16"
+        viewBox="0 0 24 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="menu-mobile-open menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"
+        />
+      </svg>
+
+      <div
+        id=""
+        class="menu-mobile-backdrop is-open js-menu-container id=mobile-menu "
         
+      >
+        <div class="menu-mobile " id="mobile-menu">
+          <button class="menu-mobile__button--close js-close-menu">
+            <svg
+              width="25"
+              height="25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="x-svg menu-mobile__button-svg--close"
+            >
+              <path
+                d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z"
+              />
+            </svg>
+          </button>
+
+          <nav class="menu-mobile__navigation">
+            <ul class="menu-mobile__navigation-list">
+              <li class="menu-mobile__navigation-list-item">
+                <a href="./index.html" class="menu-mobile__navigation-link--agencja">Agencja</a>
+              </li>
+              <li class="menu-mobile__navigation-list-item">
+                <a href="./portfolio.html" class="menu-mobile__navigation-link--portfolio"
+                  >Portfolio</a
+                >
+              </li>
+              <li><a href="#" class="menu-mobile__navigation-link--kontakt">Kontakt</a></li>
+            </ul>
+          </nav>
+          <ul class="menu-mobile__contact">
+            <li><a href="tel:+48111111111" class="menu-mobile__phone-link">+48 111 111 111</a></li>
+            <li>
+              <a href="menu-mobilemailto:info@devstudio.com" class="menu-mobile__email-link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-mobile__social">
+            <li class="menu-mobile__social-list-item">
+              <a href="./index.html" class="menu-mobile__social-link--instagram">Instagram</a>
+            </li>
+            <li class="menu-mobile__social-list-item">
+              <a href="./index.html" class="menu-mobile__social-link--twitter">Twitter</a>
+            </li>
+            <li class="menu-mobile__social-list-item">
+              <a href="./index.html" class="menu-mobile__social-link--facebook">Facebook</a>
+            </li>
+            <li class="menu-mobile__social-list-item">
+              <a href="./index.html" class="menu-mobile__social-link--linkdin">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
     </header>
     <main class="page-main">
       <section class="banner">
-        <div class="container ">
-          <h2 class="banner__title">
-            Efektywne rozwiązania
-            dla waszego biznesu
-          </h2>
+        <div class="container">
+          <h2 class="banner__title">Efektywne rozwiązania dla waszego biznesu</h2>
           <button data-modal-open type="button" class="banner__button">Zamów usługe</button>
         </div>
       </section>
@@ -148,7 +200,7 @@
       </div>
       <section class="section">
         <div class="container">
-          <h2 class ="headline-2">Czym się zajmujemy</h2>
+          <h2 class="headline-2">Czym się zajmujemy</h2>
           <ul class="what-we-do">
             <li class="what-we-do__list">
               <figure class="what-we-do__figure">
@@ -158,7 +210,9 @@
                   width="370"
                   height="294"
                 />
-                <figcaption class="what-we-do-caption-1 what-we-do__caption-1">Aplikacje komputerowe</figcaption>
+                <figcaption class="what-we-do-caption-1 what-we-do__caption-1">
+                  Aplikacje komputerowe
+                </figcaption>
               </figure>
             </li>
             <li class="what-we-do__list">
@@ -188,7 +242,7 @@
       </section>
       <section class="section">
         <div class="container page-main__section-4--background">
-          <h2 class ="headline-2">Nasz zespół</h2>
+          <h2 class="headline-2">Nasz zespół</h2>
           <div class="team">
             <ul class="team__list">
               <li class="team__list-item--position">
@@ -239,7 +293,9 @@
                   />
                   <figcaption class="team__caption">
                     John Doe
-                    <p class="team__job-title"><span class="team__span">Frontend Developer</span></p>
+                    <p class="team__job-title">
+                      <span class="team__span">Frontend Developer</span>
+                    </p>
                     <ul class="social-icons">
                       <li class="social-icons__list-item">
                         <svg width="44" height="44" class="social-icons__svg">
@@ -345,7 +401,7 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class ="headline-2">Nasi klienci</h2>
+          <h2 class="headline-2">Nasi klienci</h2>
           <ul class="customers">
             <li class="customers__list">
               <div class="customers__box-svg">
@@ -398,14 +454,21 @@
         <section class="page-footer__adress">
           <h2 class="logo page-footer__logo">
             <a href="./index.html" class="page-footer__link"
-              ><span class="logo__span--brand">Web</span><span class="logo__span--bright">Studio</span></a
+              ><span class="logo__span--brand">Web</span
+              ><span class="logo__span--bright">Studio</span></a
             >
           </h2>
           <span class="page-footer__color--bright">m. Warszawa, Aleje Jerozolimskie 21</span>
           <address class="footer-address page-footer__adress">
             <ul>
-              <li><a href="mailto:info@example.com" class="page-footer__link--style">info@example.com</a></li>
-              <li><a href="tel:+48111111111" class="page-footer__link--style">+48 111 111 111</a></li>
+              <li>
+                <a href="mailto:info@example.com" class="page-footer__link--style"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+48111111111" class="page-footer__link--style">+48 111 111 111</a>
+              </li>
             </ul>
           </address>
         </section>
@@ -439,7 +502,12 @@
           <ul class="footer-newsletter__list">
             <li>
               <label>
-                <input type="email" class="footer-newsletter__input" name="mail" placeholder="E-mail" />
+                <input
+                  type="email"
+                  class="footer-newsletter__input"
+                  name="mail"
+                  placeholder="E-mail"
+                />
               </label>
             </li>
             <li>
@@ -454,7 +522,19 @@
     </footer>
     <div id="backdrop" class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close class="modal__button--close">x</button>
+        <button data-modal-close class="modal__button--close">
+          <svg
+            width="25"
+            height="25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="x-svg modal__button-svg--close"
+          >
+            <path
+              d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z"
+            />
+          </svg>
+        </button>
         <h3 class="modal__title">Zostaw swoje dane w formularzu poniżej</h3>
         <form class="modal__form">
           <label class="modal__label">
@@ -476,7 +556,8 @@
           <label class="modal__label">
             <span class="modal__span">Email</span>
             <svg width="15" height="12" class="modal__svg-email">
-           <use href="./images/sprite.svg#envelope"></use></svg>
+              <use href="./images/sprite.svg#envelope"></use>
+            </svg>
             <input type="email" class="modal__input" name="mail" required />
           </label>
 
@@ -491,13 +572,13 @@
           </label>
 
           <label class="agreement">
-          
             <input type="checkbox" name="agreement" value="signed" class="agreement__input" />
-            <span class="agreement__span">Oświadczam iż akceptuję <a href="https://google.com" class="agreement__link">Regulamin</a> i
-              <a href="https://google.com" class="agreement__link">Politykę Prywatności</a></span>
-              <span class="agreement__span--checkmark">
-                
-              </span>
+            <span class="agreement__span"
+              >Oświadczam iż akceptuję
+              <a href="https://google.com" class="agreement__link">Regulamin</a> i
+              <a href="https://google.com" class="agreement__link">Politykę Prywatności</a></span
+            >
+            <span class="agreement__span--checkmark"> </span>
           </label>
 
           <button class="modal__button--submit" type="submit">Wyślij</button>
@@ -505,5 +586,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

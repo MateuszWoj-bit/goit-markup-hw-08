@@ -23,3 +23,9 @@
     --icon-color: currentColor;
   }
 }
+
+@media (max-width: 768px) {
+  .email {
+    display: none;
+  }
+}

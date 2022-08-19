@@ -21,6 +21,21 @@
     height: 30px;
     width: 30px;
   }
+  &__button-svg--close {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 60%;
+    left: 60%;
+    transform: translate(-34%, -34%);
+    fill: $black-color;
+    transition-property: fill;
+    transition-duration: 50ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      fill: $brandcolor;
+    }
+  }
   &__navigation-link--agencja {
     position: absolute;
     width: 152px;
@@ -122,6 +137,18 @@
     line-height: 22px;
     letter-spacing: 0.02em;
     color: #2196f3;
+    &::after {
+      content: '';
+
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      left: 94px;
+      top: 0px;
+
+      border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
+    }
   }
   &__social-link--twitter {
     position: absolute;
@@ -135,11 +162,19 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height, or 122% */
-
     letter-spacing: 0.02em;
 
     color: #2196f3;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      left: 68px;
+      top: 0px;
+      border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
+    }
   }
   &__social-link--facebook {
     position: absolute;
@@ -147,17 +182,23 @@
     height: 22px;
     left: 224px;
     top: 726px;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height, or 122% */
-
     letter-spacing: 0.02em;
-
     color: #2196f3;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      left: 90px;
+      top: 0px;
+      border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
+    }
   }
   &__social-link--linkdin {
     position: absolute;
@@ -171,8 +212,6 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height, or 122% */
-
     letter-spacing: 0.02em;
 
     color: #2196f3;

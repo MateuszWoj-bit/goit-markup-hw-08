@@ -22,6 +22,21 @@
     height: 30px;
     width: 30px;
   }
+  &__button-svg--close {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 64%;
+    left: 64%;
+    transform: translate(-34%, -34%);
+    fill: $black-color;
+    transition-property: fill;
+    transition-duration: 50ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      fill: $brandcolor;
+    }
+  }
   &__form {
     display: flex;
     flex-direction: column;
