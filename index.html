@@ -24,6 +24,22 @@
         <h1 class="logo page-header__logo">
           <a href="./index.html" class=""><span class="logo__span--brand">Web</span>Studio</a>
         </h1>
+        <svg
+          width="24"
+          height="16"
+          viewBox="0 0 24 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="menu-mobile-open menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"
+          />
+        </svg>
         <nav class="navigation">
           <ul class="navigation__list navigation__agencja">
             <li class="navigation__list-item">
@@ -35,48 +51,30 @@
             <li><a href="#" class="navigation__link">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="email">
-          <li>
-            <svg width="16" height="12" class="email__svg-envelope">
-              <use href="./images/sprite.svg#icon-envelope"></use>
-            </svg>
-          </li>
-          <li class="email__list-item">
-            <a href="mailto:info@devstudio.com" class="email__link">info@devstudio.com</a>
-          </li>
-        </ul>
-        <ul class="phone">
-          <li>
-            <svg width="10" height="16" class="phone__svg-mobile">
-              <use href="./images/sprite.svg#icon-smartphone-1"></use>
-            </svg>
-          </li>
-          <li><a href="tel:+48111111111" class="phone__link">+48 111 111 111</a></li>
-        </ul>
+        <div class="flex__contact">
+          <ul class="email">
+            <li>
+              <svg width="16" height="12" class="email__svg-envelope">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+            </li>
+            <li class="email__list-item">
+              <a href="mailto:info@devstudio.com" class="email__link">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="phone">
+            <li>
+              <svg width="10" height="16" class="phone__svg-mobile">
+                <use href="./images/sprite.svg#icon-smartphone-1"></use>
+              </svg>
+            </li>
+            <li><a href="tel:+48111111111" class="phone__link">+48 111 111 111</a></li>
+          </ul>
+        </div>
       </div>
-      <svg
-        width="24"
-        height="16"
-        viewBox="0 0 24 16"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        class="menu-mobile-open menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"
-        />
-      </svg>
 
-      <div
-        id=""
-        class="menu-mobile-backdrop is-open js-menu-container id=mobile-menu "
-        
-      >
-        <div class="menu-mobile " id="mobile-menu">
+      <div id="" class="menu-mobile-backdrop is-open js-menu-container id=mobile-menu">
+        <div class="menu-mobile" id="mobile-menu">
           <button class="menu-mobile__button--close js-close-menu">
             <svg
               width="25"
@@ -499,25 +497,24 @@
         </section>
         <section class="footer-newsletter">
           <h3>Zapisz się do newslettera</h3>
-          <ul class="footer-newsletter__list">
-            <li>
-              <label>
-                <input
-                  type="email"
-                  class="footer-newsletter__input"
-                  name="mail"
-                  placeholder="E-mail"
-                />
-              </label>
-            </li>
-            <li>
-              <button class="footer-submit" type="submit">Zapisz się</button>
-              <svg width="20" height="20" class="footer-newsletter__svg">
-                <use href="./images/sprite.svg#newsl"></use>
-              </svg>
-            </li>
-          </ul>
+          <div class="footer-newsletter__list">
+            <label>
+              <input
+                type="email"
+                class="footer-newsletter__input"
+                name="mail"
+                placeholder="E-mail"
+              />
+            </label>
+          </div>
         </section>
+        <div>
+          <button class="footer-submit" type="submit">
+            Zapisz się<svg width="20" height="20" class="footer-newsletter__svg">
+              <use href="./images/sprite.svg#newsl"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
     <div id="backdrop" class="backdrop is-hidden" data-modal>

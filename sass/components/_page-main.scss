@@ -6,5 +6,23 @@
   .section:nth-child(2) {
     padding-bottom: 0px;
   }
-  &__section-4--background{background: $grey-background-color;padding-top: 94px; padding-bottom: 94px;}
+  &__section-4--background {
+    background: $grey-background-color;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .section:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 1199px) {
+  .page-main {
+    display: none;
+  }
+  .page-footer {
+    display: auto;
+  }
 }

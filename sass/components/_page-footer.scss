@@ -1,5 +1,5 @@
 .page-footer {
-background: $panetone-color;
+  background: $panetone-color;
   &__adress {
     font-style: normal;
     font-size: 14px;
@@ -29,6 +29,21 @@ background: $panetone-color;
     letter-spacing: 0.03em;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-  &__color--bright{ color: $white-color;}
-  &__background{background: $panetone-color;padding-top: 60px; padding-bottom: 60px;}
+  &__color--bright {
+    color: $white-color;
+  }
+  &__background {
+    background: $panetone-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .page-footer {
+    &__background {
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+    }
+  }
 }

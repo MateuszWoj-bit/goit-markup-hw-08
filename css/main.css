@@ -54,6 +54,16 @@ button,
   cursor: pointer;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+}
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -237,9 +247,15 @@ button,
   --icon-color: currentColor;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .email {
     display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .email {
+    margin-top: 0px;
+    margin-left: 60px;
   }
 }
 .feature-box__box-svg {
@@ -362,10 +378,16 @@ button,
   fill: #ffffff;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer-newsletter {
+    margin-left: 177px;
+  }
+}
 .footer-submit {
+  position: relative;
+  margin-top: 48px;
   margin-left: 12px;
   padding: 10px 76px 10px 42px;
-  display: block;
   text-align: center;
   font-weight: 700;
   font-size: 16px;
@@ -581,9 +603,21 @@ button,
   width: 58px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navigation {
     display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .navigation__list {
+    margin-left: 86px;
+  }
+  .navigation__list-item {
+    margin-right: 60px;
+  }
+  .navigation__portfolio::after {
+    content: "";
+    left: 113px;
   }
 }
 .page-header {
@@ -592,6 +626,11 @@ button,
   border-bottom: 1px solid #ececec;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .page-header {
+    padding-bottom: 10px;
+  }
+}
 .page-footer {
   background: #2f303a;
 }
@@ -630,6 +669,13 @@ button,
   padding-bottom: 60px;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__background {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+}
 .page-main .section:nth-child(4) {
   background: #f5f4fa;
   padding: 0px;
@@ -643,6 +689,19 @@ button,
   padding-bottom: 94px;
 }
 
+@media (max-width: 1199px) {
+  .section:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 1199px) {
+  .page-main {
+    display: none;
+  }
+  .page-footer {
+    display: auto;
+  }
+}
 .phone {
   font-weight: 500;
   font-size: 14px;
@@ -670,9 +729,14 @@ button,
   margin-right: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .phone {
     display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .phone {
+    margin-left: 60px;
   }
 }
 .portfolio-buttons {
@@ -874,7 +938,15 @@ button,
 .flex {
   display: flex;
 }
+.flex__contact {
+  display: flex;
+}
 
+@media (min-width: 320px) and (max-width: 1199px) {
+  .flex__contact {
+    display: inline;
+  }
+}
 #backdrop,
 .menu-mobile-backdrop {
   position: fixed;
@@ -1095,9 +1167,8 @@ button,
 }
 
 .menu-mobile-open {
-  position: absolute;
-  top: 30px;
-  right: 23px;
+  margin-top: 8px;
+  margin-left: 276px;
   fill: #000000;
   cursor: pointer;
 }

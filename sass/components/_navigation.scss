@@ -40,8 +40,24 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navigation {
     display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .navigation {
+    &__list {
+      margin-left: 86px;
+    }
+    &__list-item {
+      margin-right: 60px;
+    }
+    &__portfolio {
+      &::after {
+        content: '';
+        left: 113px;
+      }
+    }
   }
 }
