@@ -38,12 +38,31 @@
     padding-bottom: 60px;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 320px) and (max-width: 1199px) {
   .page-footer {
     &__background {
       flex-direction: row;
       flex-wrap: wrap;
-      flex-basis: 100%;
+      justify-content: flex-start;
     }
+  }
+}
+@media (min-width: 320px) and (max-width: 1199px) {
+  .page-footer {
+    &__logo {
+      text-align: center;
+      margin-left: 28px;
+    }
+    &__link {
+      &--style {
+        text-align: center;
+        margin-left: 76px;
+      }
+      &--style[href='tel:+48111111111']{
+        margin-left: 85px;
+      }
+    
+    }
+    &__color--bright{margin-left: 20px;}
   }
 }

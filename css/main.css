@@ -669,11 +669,27 @@ button,
   padding-bottom: 60px;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 320px) and (max-width: 1199px) {
   .page-footer__background {
     flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: 100%;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 320px) and (max-width: 1199px) {
+  .page-footer__logo {
+    text-align: center;
+    margin-left: 28px;
+  }
+  .page-footer__link--style {
+    text-align: center;
+    margin-left: 76px;
+  }
+  .page-footer__link--style[href="tel:+48111111111"] {
+    margin-left: 85px;
+  }
+  .page-footer__color--bright {
+    margin-left: 20px;
   }
 }
 .page-main .section:nth-child(4) {
