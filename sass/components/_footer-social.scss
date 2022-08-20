@@ -34,3 +34,22 @@
     }
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer-social {
+    position: relative;
+    margin-left: 220px;
+    &__title {
+      margin-left: 36px;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer-social {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 0px;
+    &__title {
+      margin-left: 36px;
+    }
+  }
+}

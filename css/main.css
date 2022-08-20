@@ -333,6 +333,25 @@ button,
   fill: #ffffff;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer-social {
+    position: relative;
+    margin-left: 220px;
+  }
+  .footer-social__title {
+    margin-left: 36px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer-social {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+  .footer-social__title {
+    margin-left: 36px;
+  }
+}
 .footer-newsletter {
   margin-left: 77px;
   padding-top: 12px;
@@ -380,7 +399,33 @@ button,
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer-newsletter {
+    position: relative;
+    margin-top: 100px;
     margin-left: 177px;
+    padding-bottom: 60px;
+  }
+  .footer-newsletter__input {
+    position: absolute;
+    left: -15px;
+    width: 400px;
+  }
+  .footer-newsletter__title {
+    margin-left: 65px;
+  }
+  .footer-newsletter__svg {
+    margin-right: 40px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer-newsletter {
+    margin-top: 60px;
+  }
+  .footer-newsletter__input {
+    width: 450px;
+    margin-left: -75px;
+  }
+  .footer-newsletter__title {
+    margin-left: 30px;
   }
 }
 .footer-submit {
@@ -399,6 +444,18 @@ button,
   border-radius: 4px;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer-submit {
+    margin-top: 7px;
+    margin-left: 248px;
+    padding-right: 90px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer-submit {
+    margin-top: 12px;
+  }
+}
 .headline-2 {
   font-size: 36px;
   line-height: 1.166;
@@ -671,25 +728,48 @@ button,
 
 @media (min-width: 320px) and (max-width: 1199px) {
   .page-footer__background {
+    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
 }
-@media (min-width: 320px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .page-footer__logo {
     text-align: center;
     margin-left: 28px;
   }
   .page-footer__link--style {
+    position: absolute;
+    top: 144px;
+    left: 95px;
     text-align: center;
-    margin-left: 76px;
   }
   .page-footer__link--style[href="tel:+48111111111"] {
-    margin-left: 85px;
+    top: 175px;
+    left: 102px;
+    position: absolute;
   }
   .page-footer__color--bright {
     margin-left: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .page-footer__logo {
+    text-align: center;
+  }
+  .page-footer__link--style {
+    margin-left: 55px;
+    line-height: 2.5;
+  }
+  .page-footer__link--style[href="tel:+48111111111"] {
+    margin-left: 60px;
+  }
+  .page-footer__color--bright {
+    line-height: 2.5;
+  }
+  .page-footer__background {
+    justify-content: center;
   }
 }
 .page-main .section:nth-child(4) {

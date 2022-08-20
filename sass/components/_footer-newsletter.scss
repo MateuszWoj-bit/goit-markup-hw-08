@@ -44,6 +44,35 @@
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer-newsletter {
+    position: relative;
+    margin-top: 100px;
     margin-left: 177px;
+    padding-bottom: 60px;
+    &__input {
+      position: absolute;
+      left: -15px;
+      width: 400px;
+    }
+    &__title {
+      margin-left: 65px;
+    }
+    &__svg {
+      margin-right: 40px;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer-newsletter {
+    margin-top: 60px;
+    &__input {
+    width: 450px; 
+    margin-left: -75px; 
+    }
+    &__title {
+    margin-left: 30px;  
+    }
+    &__svg {
+      
+    }
   }
 }

@@ -41,13 +41,14 @@
 @media (min-width: 320px) and (max-width: 1199px) {
   .page-footer {
     &__background {
+      position: relative;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: flex-start;
     }
   }
 }
-@media (min-width: 320px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .page-footer {
     &__logo {
       text-align: center;
@@ -55,14 +56,41 @@
     }
     &__link {
       &--style {
+        position: absolute;
+        top: 144px;
+        left: 95px;
         text-align: center;
-        margin-left: 76px;
       }
-      &--style[href='tel:+48111111111']{
-        margin-left: 85px;
+      &--style[href='tel:+48111111111'] {
+        top: 175px;
+        left: 102px;
+        position: absolute;
       }
-    
     }
-    &__color--bright{margin-left: 20px;}
+    &__color--bright {
+      margin-left: 20px;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .page-footer {
+    &__logo {
+      text-align: center;
+    }
+    &__link {
+      &--style {
+        margin-left: 55px;
+        line-height: 2.5;
+      }
+      &--style[href='tel:+48111111111'] {
+        margin-left: 60px;
+      }
+    }
+    &__color--bright {
+      line-height: 2.5;
+    }
+    &__background {
+      justify-content: center;
+    }
   }
 }
