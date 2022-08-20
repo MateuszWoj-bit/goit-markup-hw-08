@@ -19,3 +19,25 @@
     }
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .features-list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__list-item {
+    &:nth-child(-n + 3) {
+      margin-right: 0px;
+    }
+  }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .features-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    &__list-item {
+    &:nth-child(-n + 3) {
+      margin-right: 0px;
+    }
+  }
+  }
+}

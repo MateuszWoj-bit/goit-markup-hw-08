@@ -1,6 +1,5 @@
 .feature-box {
   &__box-svg {
-    height: 120px;
     width: 270px;
     padding: 25px 100px;
     background-color: $grey-background-color;
@@ -11,9 +10,39 @@
     width: 270px;
   }
   &__paragraph {
-  color: $grey-color;
+    color: $grey-color;
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
 }
-&__title {
-  margin-bottom: 10px;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .feature-box {
+    &__box-svg {
+      width: 350px;
+      padding: 25px 140px;
+      background-color: $grey-background-color;
+      margin-top: 20px;
+    }
+    .feature-box__paragraph {
+      width: 350px;
+    }
+  }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .feature-box {
+    &__box-svg {
+      width: 450px;
+      padding: 25px 190px;
+      background-color: $grey-background-color;
+      margin-top: 20px;
+      
+    }
+    .feature-box__paragraph {
+      width: 450px;
+    }
+    &__title {
+    text-align: center;
+  }
+  }
 }

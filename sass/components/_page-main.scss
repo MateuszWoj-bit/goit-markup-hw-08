@@ -18,11 +18,37 @@
     display: none;
   }
 }
-@media (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .page-main {
-    display: none;
+    .section:nth-child(2) {
+      padding-bottom: 35px;
+      padding-top: 54px;
+    }
+    &__section-4--background {
+      padding-top: 54px;
+      padding-bottom: 54px;
+    }
   }
-  .page-footer {
-    display: auto;
+
+  .section:nth-child(5) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .page-main {
+    .section:nth-child(2) {
+      padding-bottom: 35px;
+      padding-top: 54px;
+    }
+    &__section-4--background {
+      padding-top: 54px;
+      padding-bottom: 54px;
+    }
+  }
+
+  .section:nth-child(5) {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
