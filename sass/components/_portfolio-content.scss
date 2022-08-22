@@ -37,3 +37,36 @@
     }
   }
 }
+@media (min-width: 320px) and (max-width: 479px) {
+  .portfolio-content {
+    &__image {
+      width: fit-content;
+    }
+    &__caption {
+      &--tablet-style{padding-bottom: px;}
+      
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-content {
+    &__image {
+      width: 350px;
+    }
+    &__caption {
+      &--tablet-style{padding-bottom: 60px;}
+      
+    }
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .portfolio-content {
+    &__image {
+      width: 450px;
+    }
+    &__caption {
+      &--tablet-style{padding-bottom: px;}
+      
+    }
+  }
+}

@@ -25,6 +25,10 @@
     font-weight: 400;
     color: $grey-color;
   }
+  &__img {
+      width: 270px;
+      height: 260px;
+    }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .team {
@@ -41,10 +45,10 @@
         margin-top: 40px;
       }
     }
-  }
-  .team__img {
-    width: 354px;
-    height: 374px;
+    &__img {
+      width: 354px;
+      height: 374px;
+    }
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -62,9 +66,9 @@
         margin-top: 40px;
       }
     }
-  }
-  .team__img {
-    width: 450px;
-    height: 460px;
+    &__img {
+      width: 450px;
+      height: 460px;
+    }
   }
 }

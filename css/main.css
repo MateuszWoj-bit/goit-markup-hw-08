@@ -190,7 +190,6 @@ button,
 }
 .banner__button {
   position: absolute;
-  position: absolute;
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -207,7 +206,72 @@ button,
   border: none;
   border-radius: 4px;
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner .banner {
+    background-image: url(../images/Solutionx2.jpg);
+  }
+}
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .banner {
+    height: 400px;
+    max-height: 400px;
+    background-image: url(../images/Solution768.jpg);
+    background-size: contain;
+  }
+  .banner__title {
+    width: 365px;
+    font-size: 26px;
+    padding: 0px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .banner__button {
+    width: 200px;
+    padding-left: 20px;
+    padding-right: 15px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: url(../images/Solution768x2.jpg);
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner {
+    height: 400px;
+    max-height: 400px;
+    width: fit-content;
+    max-width: 480px;
+    background-image: url(../images/Solution480.jpg);
+    background-size: contain;
+  }
+  .banner__title {
+    width: 365px;
+    font-size: 26px;
+    padding: 0px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .banner__button {
+    width: 200px;
+    padding-left: 20px;
+    padding-right: 15px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: url(../images/Solution480x2.jpg);
+  }
+}
 .customers {
   display: flex;
   margin-top: 50px;
@@ -696,10 +760,18 @@ button,
   border-radius: 4px;
 }
 
-@media (min-width: 320px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .modal {
     height: 609px;
     width: 450px;
+    top: 42%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .modal {
+    height: 609px;
+    width: 450px;
+    top: 35%;
   }
 }
 .menufocus {
@@ -880,7 +952,7 @@ button,
 @media (min-width: 768px) and (max-width: 1199px) {
   .page-main .section:nth-child(2) {
     padding-bottom: 35px;
-    padding-top: 54px;
+    padding-top: 20px;
   }
   .page-main__section-4--background {
     padding-top: 54px;
@@ -978,6 +1050,22 @@ button,
   margin-left: 8px;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .portfolio-buttons {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .portfolio-buttons__list-item:nth-child(1) {
+    margin-left: 8px;
+  }
+  .portfolio-buttons__list-item:nth-child(n+4) {
+    margin-top: 15px;
+  }
+  .portfolio-buttons__button {
+    padding: 6px 28px 6px 28px;
+    margin-left: 7px;
+  }
+}
 .portfolio-content {
   margin-top: 56px;
   display: flex;
@@ -1013,6 +1101,30 @@ button,
   transform: translate(0, 0);
 }
 
+@media (min-width: 320px) and (max-width: 479px) {
+  .portfolio-content__image {
+    width: fit-content;
+  }
+  .portfolio-content__caption--tablet-style {
+    padding-bottom: px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-content__image {
+    width: 350px;
+  }
+  .portfolio-content__caption--tablet-style {
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .portfolio-content__image {
+    width: 450px;
+  }
+  .portfolio-content__caption--tablet-style {
+    padding-bottom: px;
+  }
+}
 .portfolio-hidden-box {
   position: relative;
   overflow: hidden;
@@ -1030,6 +1142,15 @@ button,
   transition: transform 400ms linear;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .portfolio-hidden-box {
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolio-hidden-box__paragraph {
+    padding: 55px 45px 55px 24px;
+  }
+}
 .social-icons {
   display: flex;
   justify-content: center;
@@ -1077,6 +1198,10 @@ button,
 .team__span {
   font-weight: 400;
   color: #757575;
+}
+.team__img {
+  width: 270px;
+  height: 260px;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -1183,7 +1308,7 @@ button,
   display: flex;
 }
 
-@media (min-width: 320px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .flex__contact {
     display: inline;
   }
