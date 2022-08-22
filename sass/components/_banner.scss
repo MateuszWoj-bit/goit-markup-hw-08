@@ -86,8 +86,7 @@
   .banner {
     height: 400px;
     max-height: 400px;
-    width: fit-content;
-    max-width: 480px;
+    
     background-image: url(../images/Solution480.jpg);
     background-size: contain;
 
@@ -115,4 +114,8 @@
     background-image: url(../images/Solution480x2.jpg);
   }
 }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+.banner{width: fit-content;
+    max-width: 480px;}
 }
