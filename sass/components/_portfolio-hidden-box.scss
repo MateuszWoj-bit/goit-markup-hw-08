@@ -14,7 +14,7 @@
     transition: transform 400ms linear;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media  (max-width: 767px) {
   .portfolio-hidden-box {
     position: relative;
     overflow: hidden;

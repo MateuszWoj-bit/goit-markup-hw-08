@@ -82,7 +82,7 @@
   }
 }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .banner {
     height: 400px;
     max-height: 400px;
@@ -115,7 +115,39 @@
   }
 }
 }
-@media (min-width: 320px) and (max-width: 480px) {
-.banner{width: fit-content;
-    max-width: 480px;}
+@media (max-width: 767px) {
+  .banner {
+    height: 400px;
+    max-height: 400px;
+    
+    background-image: url(../images/Solution480.jpg);
+    background-size: contain;
+
+    &__title {
+      width: 365px;
+      font-size: 26px;
+      padding: 0px;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &__button {
+      width: 200px;
+      padding-left: 20px;
+      padding-right: 15px;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .banner {
+    background-image: url(../images/Solution480x2.jpg);
+  }
+}
+}
+@media (max-width: 480px) {
+  .banner {width: fit-content;}
 }
