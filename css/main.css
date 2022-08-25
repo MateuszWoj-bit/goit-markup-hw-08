@@ -171,6 +171,7 @@ button,
   background-size: 1600px, contain, contain;
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
+  width: fit-content;
 }
 .banner__title {
   width: 696px;
@@ -299,9 +300,9 @@ button,
     background-image: url(../images/Solution480x2.jpg);
   }
 }
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   .banner {
-    width: fit-content;
+    width: 100%;
   }
 }
 .customers {
