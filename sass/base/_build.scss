@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 480px;
   padding: 0 15px;
 }
 .section {
@@ -39,8 +39,9 @@ cursor: pointer;
     max-width: 768px;
   }
 }
-@media (max-width: 767px) {
-  .container {
-    max-width: 480px;
+@media (min-width: 1200px) {
+  .container {    
+    width: 1200px;
+    max-width: none;
   }
 }

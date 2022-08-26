@@ -10,7 +10,7 @@
   font-family: $font-roboto;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: $grey-color;
@@ -69,8 +69,8 @@
   z-index: 5;}
 }
 }
-@media (max-width: 1199px) {
+@media (min-width: 1200px) {
   .agreement__span {  
-  font-size: 12px;
+  font-size: 14px;
 }
 }

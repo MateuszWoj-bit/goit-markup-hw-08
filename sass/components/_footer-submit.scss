@@ -1,6 +1,6 @@
 .footer-submit {
   position: relative;
-  margin-top: 48px;
+  margin-top: 12px;
   margin-left: 12px;
   padding: 10px 76px 10px 42px;
 
@@ -21,8 +21,8 @@
     padding-right: 90px;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 1200px) {
   .footer-submit {
-    margin-top: 12px;
+    margin-top: 48px;
   }
 }

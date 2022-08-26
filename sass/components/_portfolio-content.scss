@@ -5,6 +5,9 @@
   gap: 30px;
   padding-left: 15px;
   padding-right: 15px;
+  &__image {
+      width: fit-content;
+    }
   &__caption {
     padding: 24px 20px;
     display: block;
@@ -37,17 +40,7 @@
     }
   }
 }
-@media (max-width: 767px) {
-  .portfolio-content {
-    &__image {
-      width: fit-content;
-    }
-    &__caption {
-      &--tablet-style{padding-bottom: px;}
-      
-    }
-  }
-}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .portfolio-content {
     &__image {

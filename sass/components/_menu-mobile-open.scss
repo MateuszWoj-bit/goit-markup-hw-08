@@ -1,10 +1,9 @@
-
-.menu-mobile-open{
+.menu-mobile-open {
   margin-top: 8px;
   margin-left: 276px;
   fill: $black-color;
   cursor: pointer;
-  &:hover{fill:  $brandcolor;}
-  
+  &:hover {
+    fill: $brandcolor;
+  }
 }
-

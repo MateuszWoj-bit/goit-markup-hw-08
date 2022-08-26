@@ -1,15 +1,19 @@
 .customers {
   display: flex;
   margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+
   .customers__list {
-    &:not(:first-child) {
-      margin-left: 30px;
+    &:nth-last-child(-n + 4) {
+      margin-top: 30px;
     }
   }
   &__box-svg {
     height: 92px;
-    width: 170px;
-    padding: 17.71px 32px 14.25px;
+    width: 210px;
+    padding: 17.71px 55px 14.25px;
     border: 1px solid $icon-base-color;
     border-radius: 4px;
     fill: $icon-base-color;
@@ -28,6 +32,9 @@
       &:not(:first-child) {
         margin-left: 0px;
       }
+      &:nth-last-child(-n + 4) {
+        margin-top: 0px;
+      }
       &:nth-last-child(-n + 3) {
         margin-top: 30px;
       }
@@ -39,22 +46,22 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 1200px) {
   .customers {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 30px;
+    flex-wrap: none;
+    justify-content: none;
+    margin-top: 50px;
     .customers__list {
       &:not(:first-child) {
-        margin-left: 0px;
+        margin-left: 30px;
       }
       &:nth-last-child(-n + 4) {
-        margin-top: 30px;
+        margin-top: 0px;
       }
     }
-    &__box-svg {      
-      width: 210px;
-      padding: 17.71px 55px 14.25px;
+    &__box-svg {
+      width: 170px;
+      padding: 17.71px 32px 14.25px;
     }
   }
 }

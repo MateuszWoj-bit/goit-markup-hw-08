@@ -1,19 +1,20 @@
 .feature-box {
   &__box-svg {
-    width: 270px;
-    padding: 25px 100px;
     background-color: $grey-background-color;
-    margin-bottom: 30px;
     border-radius: 4px;
+    width: 450px;
+    padding: 25px 190px;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
   .feature-box__paragraph {
-    width: 270px;
+    width: 450px;
   }
   &__paragraph {
     color: $grey-color;
   }
   &__title {
-    margin-bottom: 10px;
+    text-align: center;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -21,28 +22,26 @@
     &__box-svg {
       width: 350px;
       padding: 25px 140px;
-      background-color: $grey-background-color;
       margin-top: 20px;
+      margin-bottom: 30px;
     }
     .feature-box__paragraph {
       width: 350px;
     }
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 1200px) {
   .feature-box {
     &__box-svg {
-      width: 450px;
-      padding: 25px 190px;
-      background-color: $grey-background-color;
-      margin-top: 20px;
-      
+      width: 270px;
+      padding: 25px 100px;
+      margin-bottom: 30px;
     }
     .feature-box__paragraph {
-      width: 450px;
+      width: 270px;
     }
     &__title {
-    text-align: center;
-  }
+      margin-bottom: 10px;
+    }
   }
 }

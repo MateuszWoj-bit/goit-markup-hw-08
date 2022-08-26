@@ -1,11 +1,16 @@
 .footer-social {
-  margin-left: 70px;
   padding-top: 12px;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $white-color;
+  position: relative;
+  margin-top: 50px;
+  margin-left: 0px;
+  &__title {
+    margin-left: 36px;
+  }
   &__list {
     position: relative;
     display: flex;
@@ -38,18 +43,18 @@
   .footer-social {
     position: relative;
     margin-left: 220px;
+    margin-top: 0px;
     &__title {
       margin-left: 36px;
     }
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 1200px) {
   .footer-social {
-    position: relative;
-    margin-top: 50px;
-    margin-left: 0px;
+    margin-left: 70px;
+    margin-top: 0px;
     &__title {
-      margin-left: 36px;
+      margin-left: 0px;
     }
   }
 }

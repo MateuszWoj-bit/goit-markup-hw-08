@@ -8,6 +8,7 @@
   }
   &__link {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
     &--style {
       color: $white-color06;
     }
@@ -36,18 +37,32 @@
     background: $panetone-color;
     padding-top: 60px;
     padding-bottom: 60px;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
-}
-@media (min-width: 320px) and (max-width: 1199px) {
-  .page-footer {
-    &__background {
-      position: relative;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: flex-start;
+  &__logo {
+    text-align: center;
+  }
+  &__link {
+    &--style {
+      margin-left: 55px;
+      line-height: 2.5;
+    }
+    &--style[href='tel:+48111111111'] {
+      margin-left: 60px;
     }
   }
+  &__color--bright {
+    line-height: 2.5;
+  }
+  &__background {
+    justify-content: center;
+  }
 }
+
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .page-footer {
     &__logo {
@@ -57,7 +72,7 @@
     &__link {
       &--style {
         position: absolute;
-        top: 144px;
+        top: 149px;
         left: 95px;
         text-align: center;
       }
@@ -70,27 +85,70 @@
     &__color--bright {
       margin-left: 20px;
     }
+    &__link {
+    &--style {
+      margin-left: 0px;
+      line-height: 0;
+    }
+    &--style[href='tel:+48111111111'] {
+      margin-left: 0px;
+    }
+  }
+  &__color--bright {
+    line-height: 1.71;
+  }
+  &__background {
+    justify-content: start;
+  }
   }
 }
-@media (max-width: 767px) {
+
+@media (min-width: 1200px) {
   .page-footer {
-    &__logo {
-      text-align: center;
+    
+    &__adress {
+      font-style: normal;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
     }
     &__link {
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
       &--style {
-        margin-left: 55px;
-        line-height: 2.5;
+        
+        margin-left: 0px;
+        line-height: 0;
+      }
+      
+      &--style[href='mailto:info@example.com'] {
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
       }
       &--style[href='tel:+48111111111'] {
-        margin-left: 60px;
+        margin-left: 0px;
       }
     }
-    &__color--bright {
-      line-height: 2.5;
+    &__logo {
+      text-align: start;
+      margin-bottom: 20px;
+      font-family: $font-raleway;
+      font-size: 26px;
+      line-height: 1.19;
+      letter-spacing: 0.03em;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
-    &__background {
-      justify-content: center;
+    &__color--bright {
+      color: $white-color;
+    }
+    &__background {      
+      justify-content: none;
+    }
+    
+    &__color--bright {
+      line-height: 0;
     }
   }
 }
